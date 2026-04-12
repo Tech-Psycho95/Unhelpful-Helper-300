@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unhelpful Helper 3000</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <header class="hero">
+      <p class="eyebrow">Totally Revolutionary Startup Product</p>
+      <h1>Unhelpful Helper 3000</h1>
+      <p class="subtitle">
+        Turning obvious actions into chaotic mini-games since 2026.
+      </p>
+    </header>
+
+    <main class="grid">
+      <section class="card" id="uncenter-section">
+        <h2>1) CSS Un-centering Engine(TM)</h2>
+        <p>
+          Try to center this box. We will aggressively "help" by launching it
+          to a random corner.
+        </p>
+        <button id="center-attempt-btn" class="btn">Center My Div</button>
+        <div id="center-target" class="target-box">Please center me</div>
+      </section>
+
+      <section class="card" id="shake-section">
+        <h2>2) Shake-to-Volume Slider</h2>
+        <p>
+          Dragging is forbidden. Shake your phone to change volume, and yes,
+          sometimes shaking it up lowers it.
+        </p>
+        <div class="volume-wrap">
+          <label for="volume-slider">Chaotic Volume</label>
+          <input
+            type="range"
+            id="volume-slider"
+            min="0"
+            max="100"
+            value="50"
+            aria-describedby="volume-note"
+          />
+          <div id="volume-value">50%</div>
+        </div>
+        <p id="volume-note" class="note">
+          On desktop, use the Fake Shake button to simulate disappointing
+          movement.
+        </p>
+        <button id="fake-shake-btn" class="btn alt">Fake Shake</button>
+      </section>
+
+      <section class="card" id="spinner-section">
+        <h2>3) Infinite Loading Spinner</h2>
+        <p>
+          Click the button to do something important. It never finishes, and
+          that is the feature.
+        </p>
+        <button id="do-something-btn" class="btn danger">Do Something</button>
+        <div id="infinite-loader" class="loader hidden" aria-live="polite">
+          <div class="spinner" aria-hidden="true"></div>
+          <span>Doing something forever...</span>
+        </div>
+      </section>
+
+      <section class="card" id="progress-section">
+        <h2>4) Reverse Progress Bar</h2>
+        <p>
+          Productive energy drains away as you complete tasks. Exactly as
+          intended.
+        </p>
+        <div class="progress-shell" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+          <div id="reverse-progress-fill" class="progress-fill"></div>
+        </div>
+        <div class="progress-row">
+          <span id="progress-text">100% complete. Somehow.</span>
+          <button id="complete-task-btn" class="btn">Complete Task</button>
+        </div>
+      </section>
+
+      <section class="card" id="ai-section">
+        <h2>5) AI Compliment Generator</h2>
+        <p>
+          Submit your thoughtful form. We ignore it and return a sarcastic
+          compliment from our premium AI.
+        </p>
+        <form id="compliment-form" class="form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Type anything" required />
+
+          <label for="goal">Your noble goal</label>
+          <textarea id="goal" name="goal" rows="3" placeholder="Describe your meaningful intention" required></textarea>
+
+          <button class="btn" type="submit">Submit For Validation</button>
+        </form>
+        <p id="compliment-output" class="compliment" aria-live="polite">
+          Awaiting your brave submission...
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Unhelpful Helper 3000 - Series C pending - Zero useful outcomes delivered</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
